@@ -1,4 +1,4 @@
-# 🎯 Kanban Board Project Manager
+# 🎯 Project Management
 
 A modern, multi-user Kanban board application built with **Next.js 15**, **shadcn/ui**, **Supabase**, and deployed on **Vercel**.
 

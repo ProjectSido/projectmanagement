@@ -58,6 +58,7 @@ export default function LoginPage() {
                         <LayoutGrid className="h-8 w-8 text-primary-foreground" />
                     </div>
                     <div>
+                        <h2 className="text-lg font-semibold text-primary mb-1">Project Management</h2>
                         <CardTitle className="text-2xl font-bold">Welcome back</CardTitle>
                         <CardDescription className="mt-2">
                             Sign in to your account to continue

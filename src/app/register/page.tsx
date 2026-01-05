@@ -93,6 +93,7 @@ export default function RegisterPage() {
                         <LayoutGrid className="h-8 w-8 text-primary-foreground" />
                     </div>
                     <div>
+                        <h2 className="text-lg font-semibold text-primary mb-1">Project Management</h2>
                         <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
                         <CardDescription className="mt-2">
                             Get started with your Kanban board

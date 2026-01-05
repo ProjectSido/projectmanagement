@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kanban Board | Project Manager",
+  title: "Project Management",
   description: "A modern Kanban board for project management built with Next.js, shadcn/ui, and Supabase",
   keywords: ["kanban", "project management", "task management", "productivity"],
 };

@@ -192,7 +192,7 @@ export default function Sidebar({ theme, onThemeChange }: SidebarProps) {
                             <LayoutGrid className="h-4 w-4 text-primary-foreground" />
                         </div>
                         <div className="min-w-0">
-                            <h1 className="font-bold text-base truncate">Kanban</h1>
+                            <h1 className="font-bold text-base truncate">Project Management</h1>
                         </div>
                     </div>
                 )}

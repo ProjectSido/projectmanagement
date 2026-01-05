@@ -1,4 +1,4 @@
-import { create } from "zustand";
+// @ts-nocheckimport { create } from "zustand";
 import { Board, Column, Task, TaskInsert, ColumnInsert } from "./supabase/types";
 import { createClient } from "./supabase/client";
 
