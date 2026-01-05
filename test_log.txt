@@ -1,0 +1,15 @@
+👤 Logging in as: john@example.com 
+✅ Login SUCCESS! 
+   User ID from Auth: 4684a570-231e-4ce2-8df4-1ba468704ede
+
+📋 Creating Board: "Test Board AI 1767460556180"... 
+❌ Direct Create Board FAILED: infinite recursion detected in policy for relation "boards"
+   Error Details: {
+  "code": "42P17",
+  "details": null,
+  "hint": null,
+  "message": "infinite recursion detected in policy for relation \"boards\""
+}
+
+🔄 Attempting via RPC create_board_with_columns... 
+✅ Board Created via RPC! ID: bdef5468-68c7-4c86-a632-0a70e81ef3ce
