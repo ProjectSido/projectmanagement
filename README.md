@@ -188,6 +188,46 @@ vercel
 vercel --prod
 ```
 
+### Option 3: Automated Deployment with Monitoring
+
+For AI agent automation and deployment monitoring:
+
+```bash
+# Use the automated deployment script
+.\scripts\deploy-to-vercel.ps1 -Environment "production"
+
+# Or monitor existing deployment
+.\scripts\monitor-deployment.ps1
+```
+
+**Features:**
+- ✅ Pre-deployment checks (git status, branch)
+- 🚀 Automated deployment
+- 📊 Real-time status monitoring
+- 📋 Deployment logs
+- 🔍 Health check verification
+
+**Available Commands:**
+```bash
+# List recent deployments
+vercel ls
+
+# View deployment logs
+vercel logs
+
+# Inspect deployment details
+vercel inspect
+
+# Check environment variables
+vercel env ls
+
+# Monitor deployment status
+vercel inspect <deployment-url>
+```
+
+📖 **Full workflow:** See [.agent/workflows/deploy-vercel.md](./.agent/workflows/deploy-vercel.md)
+
+
 ### Post-Deployment
 
 1. Go to Supabase **Authentication > URL Configuration**
