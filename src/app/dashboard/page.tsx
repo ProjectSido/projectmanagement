@@ -25,8 +25,14 @@ export default function DashboardPage() {
         localStorage.setItem("kanban-theme", theme);
     }, [theme]);
 
-    // Show loading while checking auth
-    if (authLoading) {
+    // Redirect if not authenticated
+    useEffect(() => {
+        if (!authLoading && !user) {
+            router.push("/login");
+        }
+    }, [user, authLoading, router]);
+
+    if (authLoading || !user) {
         return (
             <div className="flex h-screen items-center justify-center bg-background">
                 <div className="text-center">
@@ -35,12 +41,6 @@ export default function DashboardPage() {
                 </div>
             </div>
         );
-    }
-
-    // Redirect if not authenticated (middleware should handle this too)
-    if (!user) {
-        router.push("/login");
-        return null;
     }
 
     return (

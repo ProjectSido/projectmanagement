@@ -65,17 +65,18 @@ export default function ProfilePage() {
         return "U";
     };
 
-    if (authLoading) {
+    useEffect(() => {
+        if (!authLoading && !user) {
+            router.push("/login");
+        }
+    }, [user, authLoading, router]);
+
+    if (authLoading || !user) {
         return (
             <div className="flex h-screen items-center justify-center bg-background">
                 <Loader2 className="h-8 w-8 animate-spin text-primary" />
             </div>
         );
-    }
-
-    if (!user) {
-        router.push("/login");
-        return null;
     }
 
     return (
